@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_24_045920) do
+ActiveRecord::Schema.define(version: 2021_05_24_062632) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,19 @@ ActiveRecord::Schema.define(version: 2021_05_24_045920) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "deals", default: false
+    t.boolean "reviews", default: false
+    t.boolean "packages", default: false
+    t.boolean "star_ships", default: false
+    t.boolean "mars", default: false
+    t.boolean "jupiter", default: false
+    t.boolean "moon", default: false
+    t.boolean "saturn", default: false
+    t.boolean "uranus", default: false
+    t.boolean "neptune", default: false
+    t.boolean "the_nearest_black_hole", default: false
+    t.boolean "the_endless_void", default: false
+    t.string "frequency"
   end
 
   create_table "users", force: :cascade do |t|
