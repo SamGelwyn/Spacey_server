@@ -1,0 +1,24 @@
+<h1>All Subscribers</h1>
+
+<% @subscribers.each do |subscriber| %>
+  <div class="subscriber">
+  <ul>
+    <li>First Name: <%= link_to subscriber.first_name, subscriber %></li>
+    <li>Last Name: <%= link_to subscriber.last_name, subscriber %></li>
+    <li>email: <%= link_to subscriber.email, subscriber %></li>
+  </ul>
+  </div>
+  <div class="first_name">
+  <%= link_to subscriber.first_name, subscriber %>
+  </div>
+  <div class="topics">
+
+  
+  </div>
+  <div class="destinations">
+  
+  </div>
+  <div class="frequency">
+  
+  </div>
+<% end %>

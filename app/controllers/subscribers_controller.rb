@@ -1,10 +1,13 @@
 class SubscribersController < ApplicationController
   def index
     @subscribers = Subscriber.all
+    render json: {subscribers: @subscribers}
+ 
   end
 
   def show
     @subscriber = Subscriber.find params[:id]
+    render json: {subscriber: @subscriber}
   end
 
   def create
