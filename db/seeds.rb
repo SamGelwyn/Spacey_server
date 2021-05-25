@@ -9,7 +9,7 @@
 User.destroy_all
 u1 = User.create :email => 'craigsy@ga.co', :password => 'chicken', :password_confirmation => 'chicken'
 u2 = User.create :email => 'jonesy@ga.co', :password => 'chicken',:password_confirmation => 'chicken'
-9.times do |n|
+3.times do |n|
   email = "example-#{n+1}@ga.co"
   password = "chicken"
   User.create!(
@@ -20,7 +20,7 @@ u2 = User.create :email => 'jonesy@ga.co', :password => 'chicken',:password_conf
 puts "#{ User.count } users"
 
 Subscriber.destroy_all
-9.times do |n|
+5.times do |n|
   first_name  = Faker::Name.first_name
   last_name  = Faker::Name.last_name
   email = "example-#{n+1}@ga.co"

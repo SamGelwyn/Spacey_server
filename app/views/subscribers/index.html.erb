@@ -3,39 +3,35 @@
 <% @subscribers.each do |subscriber| %>
 
   <div class="first_name">
-    <%= link_to subscriber.first_name, subscriber %>
+    <%= subscriber.first_name %>
   </div>
   <div class="last_name">
-    <%= link_to subscriber.last_name, subscriber %>
+    <%= subscriber.last_name %>
   </div>
   <div class="email">
     <%= link_to subscriber.email, subscriber %>
   </div>
   <div class="topics">
-
-      email: <%= link_to subscriber.email, subscriber%>
-      first_name: <%= link_to subscriber.first_name, subscriber%>
-      last_name: <%= link_to subscriber.last_name, subscriber%>
-      deals: <%= link_to subscriber.deals, subscriber%>
-      reviews: <%= link_to subscriber.reviews, subscriber%>
-      packages: <%= link_to subscriber.packages, subscriber%>
-      star_ships: <%= link_to subscriber.star_ships, subscriber%>      
+      deals: <%= subscriber.deals %>
+      reviews: <%= subscriber.reviews %>
+      packages: <%= subscriber.packages %>
+      star_ships: <%= subscriber.star_ships %>      
   </div>
   <div class="destinations">
-    mars: <%= link_to subscriber.mars, subscriber%>      
-    jupiter: <%= link_to subscriber.jupiter, subscriber%>      
-    moon: <%= link_to subscriber.moon, subscriber%>      
-    saturn: <%= link_to subscriber.saturn, subscriber%>      
-    uranus: <%= link_to subscriber.uranus, subscriber%>      
-    neptune: <%= link_to subscriber.neptune, subscriber%>      
-    the_nearest_black_hole: <%= link_to subscriber.the_nearest_black_hole, subscriber%>      
-    the_endless_void: <%= link_to subscriber.the_endless_void, subscriber%>              
-    the_sun: <%= link_to subscriber.the_sun, subscriber%>      
-    pluto: <%= link_to subscriber.pluto, subscriber%>      
-    mercury: <%= link_to subscriber.mercury, subscriber%>      
-    venus: <%= link_to subscriber.venus, subscriber%>
+    mars: <%=  subscriber.mars %>      
+    jupiter: <%=  subscriber.jupiter %>      
+    moon: <%=  subscriber.moon %>      
+    saturn: <%=  subscriber.saturn %>      
+    uranus: <%=  subscriber.uranus %>      
+    neptune: <%=  subscriber.neptune %>      
+    the_nearest_black_hole: <%=  subscriber.the_nearest_black_hole %>      
+    the_endless_void: <%=  subscriber.the_endless_void %>              
+    the_sun: <%=  subscriber.the_sun %>      
+    pluto: <%= subscriber.pluto  %>      
+    mercury: <%=  subscriber.mercury %>      
+    venus: <%=  subscriber.venus %>
   </div>
   <div class="frequency">
-    <%= link_to subscriber.frequency, subscriber%>
+    <%=  subscriber.frequency %>
   </div>
 <% end %>
