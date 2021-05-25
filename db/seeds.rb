@@ -40,6 +40,10 @@ Subscriber.destroy_all
     neptune: true,
     the_nearest_black_hole: true,
     the_endless_void: true,
+    the_sun: true,
+    pluto: false,
+    mercury: true,
+    venus: true,
 
   )
   end
