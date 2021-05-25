@@ -44,7 +44,7 @@ Subscriber.destroy_all
     pluto: false,
     mercury: true,
     venus: true,
-
+    frequency: "1 Week"
   )
   end
 puts "#{ Subscriber.count } subscribers"
