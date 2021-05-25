@@ -1,37 +1,98 @@
-<h1>All Subscribers</h1>
+<div class="resp-table-caption">
+    All Subscribers
+</div>
 
-<% @subscribers.each do |subscriber| %>
+<table>
+  
+  <tr class=“resp-table-header”>
+    <th class=“table-header-cell”>
+      First Name:
+    </th>
+    <th class=“table-header-cell”>
+      Last Name
+    </th>
+    <th class=“table-header-cell”>
+      email:
+    </th>
+    <th class=“table-header-cell”>
+      Topics:
+    </th>
+    <th class=“table-header-cell”>
+      Destinations:
+    </th>
+    <th class=“table-header-cell”>
+      Frequency:
+    </th>
+  </tr>
 
-  <div class="first_name">
-    <%= subscriber.first_name %>
-  </div>
-  <div class="last_name">
-    <%= subscriber.last_name %>
-  </div>
-  <div class="email">
-    <%= link_to subscriber.email, subscriber %>
-  </div>
-  <div class="topics">
-      deals: <%= subscriber.deals %>
-      reviews: <%= subscriber.reviews %>
-      packages: <%= subscriber.packages %>
-      star_ships: <%= subscriber.star_ships %>      
-  </div>
-  <div class="destinations">
-    mars: <%=  subscriber.mars %>      
-    jupiter: <%=  subscriber.jupiter %>      
-    moon: <%=  subscriber.moon %>      
-    saturn: <%=  subscriber.saturn %>      
-    uranus: <%=  subscriber.uranus %>      
-    neptune: <%=  subscriber.neptune %>      
-    the_nearest_black_hole: <%=  subscriber.the_nearest_black_hole %>      
-    the_endless_void: <%=  subscriber.the_endless_void %>              
-    the_sun: <%=  subscriber.the_sun %>      
-    pluto: <%= subscriber.pluto  %>      
-    mercury: <%=  subscriber.mercury %>      
-    venus: <%=  subscriber.venus %>
-  </div>
-  <div class="frequency">
-    <%=  subscriber.frequency %>
-  </div>
-<% end %>
+    <% @subscribers.each do |subscriber| %>
+      <tr class=“resp-table-row”>
+
+        <td class=“table-body-cell”>
+          <%= subscriber.first_name %>
+        </td>
+        <td class=“table-body-cell”>
+          <%= subscriber.last_name %>
+        </td>
+        <td class=“table-body-cell”>
+          <%= link_to subscriber.email, subscriber %>
+        </td>
+        <td class=“table-body-cell”>
+          <% if subscriber.deals %>
+            <span> "deals" </span>
+          <% end %>
+          <% if subscriber.reviews %>
+            <span> "reviews" </span>
+          <% end %> 
+          <% if subscriber.packages %>
+            <span> "packages" </span>
+          <% end %>
+          <% if subscriber.star_ships %>
+            <span> "star_ships" </span>
+          <% end %>
+        </td>
+        <td class=“table-body-cell”>
+          <% if subscriber.mars %>
+            <span>"mars"</span>
+          <% end %>
+          <% if subscriber.jupiter %>
+            <span>"jupiter" </span>
+          <% end %>
+          <% if  subscriber.moon %>     
+            <span>"moon"  </span>
+          <% end %>
+          <% if subscriber.saturn %>   
+            <span>"saturn"   </span>
+          <% end %>
+          <% if subscriber.uranus %>
+            <span> "uranus"  </span> 
+          <% end %>
+          <% if subscriber.neptune %>
+            <span>"neptune"  </span> 
+          <% end %>
+          <% if subscriber.the_nearest_black_hole %>
+            <span>"the_nearest_black_hole"  </span> 
+          <% end %>
+          <% if subscriber.the_endless_void %>
+            <span>"the_endless_void" </span>
+          <% end %>
+          <% if subscriber.the_sun %>
+            <span>"the_sun" </span>
+          <% end %>
+          <% if subscriber.pluto %>
+            <span>"pluto" </span>
+          <% end %>
+          <% if subscriber.mercury %>
+            <span>"mercury" </span>
+          <% end %>
+          <% if subscriber.venus %>
+            <span>"venus" </span>
+          <% end %>
+        </td>
+        <td class=“table-body-cell”>
+          <%= subscriber.frequency %>
+        </td>
+      </tr>
+    <% end %>
+
+</table>

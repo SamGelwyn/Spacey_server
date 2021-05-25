@@ -1,3 +1,106 @@
 // Place all the styles related to the Subscribers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  background-color: slategrey;
+  color: aliceblue;
+}
+
+table{
+  width: 100%;
+  display: table;
+}
+
+.resp-table-caption{
+  // display: table-caption;
+  // text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.resp-table-header{
+  display: table-header-group;
+  background-color: gray;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.table-header-cell{
+  display: table-cell;
+  padding: 10px;
+  text-align: justify;
+  border-bottom: solid black 2px;
+}
+
+#resp-table-body{
+  display: table-row-group;
+}
+
+.resp-table-row{
+  display: table-row;
+}
+
+.table-body-cell{
+  display: table-cell;
+  }
+
+// .first_name{
+//   display: inline-block;
+//   margin: 0 auto;
+//   height: 6rem;
+//   text-align: center;
+//   padding: auto;
+//   width: 12rem;
+//   border: solid black 1px;
+  
+// }
+// .last_name{
+//   display: inline-block;
+//   height: 6rem;
+//   margin: 0 auto;
+//   text-align: center;
+//   width: 12rem;
+//   border: solid black 1px;
+
+// }
+// .email{
+//   display: inline-block;
+//   height: 6rem;
+//   margin: 0 auto;
+//   text-align: center;
+
+//   width: 12rem;
+//   border: solid black 1px;
+
+// }
+// .topics{
+//   display: inline-block;
+//   height: 6rem;
+//   margin: 0 auto;
+//   text-align: center;
+
+//   width: 12rem;
+//   border: solid black 1px;
+
+// }
+// .destinations{
+//   display: inline-block;
+//   height: 6rem;
+//   margin: 0 auto;
+//   text-align: center;
+
+//   width: 15rem;
+//   border: solid black 1px;
+
+// }
+
+// .frequency {
+//   display: inline-block;
+//   height: 6rem;
+//   margin: 0 auto;
+//   text-align: center;
+
+//   width: 15rem;
+//   border: solid black 1px;
+// }
